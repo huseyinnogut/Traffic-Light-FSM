@@ -1,0 +1,23 @@
+|traffic_light_fsm
+clk => timer[0].CLK
+clk => timer[1].CLK
+clk => timer[2].CLK
+clk => state~1.DATAIN
+reset => timer[0].ACLR
+reset => timer[1].ACLR
+reset => timer[2].ACLR
+reset => state~3.DATAIN
+TAORB => nextstate.OUTPUTSELECT
+TAORB => nextstate.OUTPUTSELECT
+TAORB => nextstate.OUTPUTSELECT
+TAORB => nextstate.OUTPUTSELECT
+TAORB => nextstate.OUTPUTSELECT
+TAORB => nextstate.OUTPUTSELECT
+TAORB => nextstate.OUTPUTSELECT
+TAORB => nextstate.OUTPUTSELECT
+LA[0] <= LA[0].DB_MAX_OUTPUT_PORT_TYPE
+LA[1] <= LA.DB_MAX_OUTPUT_PORT_TYPE
+LB[0] <= LB[0].DB_MAX_OUTPUT_PORT_TYPE
+LB[1] <= LA.DB_MAX_OUTPUT_PORT_TYPE
+
+
