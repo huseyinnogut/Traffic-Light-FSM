@@ -1,0 +1,74 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/simulation/questa
+T_opt
+!i145 1
+!i144 0
+!s110 1772979188
+Voan6kNXag_:nNmo_Ucn^n2
+Z2 04 17 4 work traffic_light_fsm fast 0
+=1-b025aa4080ea-69ad83f2-3c5-4bb4
+R0
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM10U1 
+Z6 !s135 nogc
+o-quiet -auto_acc_if_foreign -work rtl_work
+Z7 tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+Z8 OL;O;2025.2;82
+R1
+T_opt1
+!i145 1
+!i144 0
+!s110 1772979593
+VWnXRhPWnLHI8kJ9ma6KYh2
+R2
+=1-b025aa4080ea-69ad8589-a1-16fc
+R0
+R3
+R4
+R5
+R6
+o-quiet -auto_acc_if_foreign -work work
+R7
+n@_opt1
+R8
+vtraffic_light_fsm
+2C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv
+DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+!s110 1772979177
+!i10b 1
+!s100 `LKoS05Szo_4hjYeX8jfK3
+IGOfJdA^F6aH35K`;abm[F0
+S1
+R1
+w1772977083
+8C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv
+FC:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv
+!i122 0
+L0 1 75
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2025.2;82
+r1
+!s85 0
+31
+!s108 1772979177.000000
+!s107 C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM|C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv|
+!i113 0
+o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -sv -work work +incdir+C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0 defaultOptions 1085333592

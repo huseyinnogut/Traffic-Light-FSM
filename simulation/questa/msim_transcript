@@ -1,0 +1,87 @@
+# Reading pref.tcl
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do traffic_light_fsm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Altera Starter FPGA Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
+# vmap work rtl_work 
+# ** Note: (vmap-220) 'c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# Copying c:/altera_lite/25.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM {C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv}
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 17:12:57 on Mar 08,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM" C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module traffic_light_fsm
+# 
+# Top level modules:
+# 	traffic_light_fsm
+# End time: 17:12:57 on Mar 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim rtl_work.traffic_light_fsm
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim rtl_work.traffic_light_fsm 
+# Start time: 17:13:02 on Mar 08,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# Loading sv_std.std
+# Loading work.traffic_light_fsm(fast)
+add wave -position insertpoint sim:/traffic_light_fsm/*
+add wave -position insertpoint  \
+sim:/traffic_light_fsm/clk
+force -freeze sim:/traffic_light_fsm/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/traffic_light_fsm/reset 1 0
+run
+force -freeze sim:/traffic_light_fsm/reset 0 0
+run
+add wave -position insertpoint  \
+sim:/traffic_light_fsm/LA
+view -new wave
+# .main_pane.wave1.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/traffic_light_fsm/LA
+force -freeze sim:/traffic_light_fsm/TAORB 1'hz 0
+run
+force -freeze sim:/traffic_light_fsm/TAORB 1 0
+run
+vsim work.traffic_light_fsm
+# End time: 17:19:47 on Mar 08,2026, Elapsed time: 0:06:45
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim work.traffic_light_fsm 
+# Start time: 17:19:47 on Mar 08,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# Loading sv_std.std
+# Loading work.traffic_light_fsm(fast)
+add wave -position end  sim:/traffic_light_fsm/TAORB
+add wave -position end  sim:/traffic_light_fsm/reset
+add wave -position end  sim:/traffic_light_fsm/LB
+add wave -position end  sim:/traffic_light_fsm/LA
+add wave -position end  sim:/traffic_light_fsm/clk
+add wave -position insertpoint sim:/traffic_light_fsm/statetype/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/traffic_light_fsm/statetype/*'.
+add wave -position insertpoint sim:/traffic_light_fsm/light_type/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/traffic_light_fsm/light_type/*'.
+quit -sim
+# End time: 17:25:51 on Mar 08,2026, Elapsed time: 0:06:04
+# Errors: 0, Warnings: 0

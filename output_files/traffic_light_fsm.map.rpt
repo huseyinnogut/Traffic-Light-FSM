@@ -1,5 +1,5 @@
 Analysis & Synthesis report for traffic_light_fsm
-Sun Mar  8 16:38:30 2026
+Sun Mar  8 17:46:06 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -46,7 +46,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar  8 16:38:30 2026           ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar  8 17:46:06 2026           ;
 ; Quartus Prime Version           ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                   ; traffic_light_fsm                               ;
 ; Top-level Entity Name           ; traffic_light_fsm                               ;
@@ -302,12 +302,15 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Sun Mar  8 16:38:06 2026
+    Info: Processing started: Sun Mar  8 17:45:43 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off traffic_light_fsm -c traffic_light_fsm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file traffic_light_fsm.sv
     Info (12023): Found entity 1: traffic_light_fsm File: C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file traffic_light_fsm_tb.sv
+    Info (12023): Found entity 1: traffic_light_fsm_tb File: C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm_tb.sv Line: 3
+Critical Warning (10846): Verilog HDL Instantiation warning at traffic_light_fsm_tb.sv(14): instance has no name File: C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm_tb.sv Line: 14
 Info (12127): Elaborating entity "traffic_light_fsm" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
@@ -317,10 +320,10 @@ Info (21057): Implemented 16 device resources after synthesis - the final resour
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 9 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4888 megabytes
-    Info: Processing ended: Sun Mar  8 16:38:30 2026
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Processing ended: Sun Mar  8 17:46:06 2026
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:19
 
 

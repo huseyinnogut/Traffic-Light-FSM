@@ -1,0 +1,39 @@
+`timescale 1ns/1ps
+
+module traffic_light_fsm_tb;
+	logic clk;
+	logic reset;
+	logic TAORB;
+	logic [1:0] LA;
+	logic [1:0] LB;
+	
+	traffic_light_fsm dut(
+		.clk(clk),
+		.reset(reset),
+		.TAORB(TAORB),
+		.LA(LA),
+		.LB(LB)
+	);
+	
+	
+	always #10 clk = ~clk;
+	
+	initial begin
+	
+		clk = 0;
+		reset = 1;
+		TAORB = 1; 
+		#20;
+		
+		reset = 0; 
+		#20;       
+		
+		TAORB = 0; 
+		#200;     
+		
+		TAORB = 1; 
+		#200; 
+		
+		$stop;
+	end
+endmodule

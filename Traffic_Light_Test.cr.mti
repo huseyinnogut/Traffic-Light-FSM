@@ -1,0 +1,17 @@
+C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm.sv
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/Traffic_Light_Test.mpf' is used as the ini file.
+-- Compiling module traffic_light_fsm
+
+Top level modules:
+	traffic_light_fsm
+
+} {} {}} C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/traffic_light_fsm_tb.sv
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/husey/Desktop/FPGA/Projects/Traffic-Light-FSM/Traffic_Light_Test.mpf' is used as the ini file.
+-- Compiling module traffic_light_fsm_tb
+
+Top level modules:
+	traffic_light_fsm_tb
+
+} {} {}}
