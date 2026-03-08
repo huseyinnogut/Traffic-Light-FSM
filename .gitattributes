@@ -1,0 +1,3 @@
+*.do linguist-detectable=false
+*.qsf linguist-detectable=false
+*.qpf linguist-detectable=false
